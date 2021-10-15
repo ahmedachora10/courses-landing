@@ -1,0 +1,160 @@
+:root {
+    --primary: #452eba;
+    --secondary: #323249a8;
+    --dark: #323249;
+    --light-green: #607d8b;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ** Header Section ** */
+header .logo {
+    width: 30px;
+    height: auto;
+}
+
+
+header .menubar a {
+    font-size: .7em;
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+@media (max-width: 472px) {
+    header .menubar a {
+        font-size: .8em;
+    }
+}
+
+header .menubar a.active {
+    color: var(--dark);
+    font-weight: 600;
+}
+/* ./ ** Header ** ./ */
+
+/* ** Hero Section ** */
+.hero {
+    height: 500px;
+}
+
+.hero .content h1.title {
+    color: var(--primary);
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.1em;
+}
+.hero .content p {
+    font-size: .9em;
+}
+
+.hero .content .btn {
+    background-color: var(--primary);
+    color: #fff;
+    font-size: .8em;
+}
+
+.rectangle {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    
+}
+
+.fill {
+    background-color: var(--primary);
+    bottom: 40px;
+    right: 0;
+}
+
+.with-border {
+    border: 8px solid var(--secondary);    right: 80px;
+    right: 80px;
+    bottom: 96px;
+    z-index: -1;
+}
+
+/* ./ ** Hero ** ./ */
+
+/* ** Courses Section ** */
+.courses {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.courses .background {
+    width: 100%;
+    height: 100%;
+    top:  0;
+    left: 0;
+    z-index: -3;
+}
+
+.courses #courses-container {
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.courses .courses-card {
+    min-width: 190px;
+    box-shadow: 1px 1px 2px 0px #dcdcdf7a;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.courses .courses-card:hover {
+
+    box-shadow: 1px 5px 4px 0px #dcdcdf7a;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+
+}
+
+.courses .courses-card img.c-img {
+    width: 40px;
+}
+
+.courses .courses-card .c-title {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.courses .courses-card .c-info {
+    font-size: .7em;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.courses .courses-card .c-info li b {
+    color: var(--light-green);
+}
+
+.courses .button div{
+    cursor: pointer;
+    font-size: .8em;
+    color: var(--secondary);
+    outline: none;
+    user-select: none;
+}
+
+
+
+/* ./ ** Courses ** ./ */
