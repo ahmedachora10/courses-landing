@@ -52,6 +52,12 @@ header .menubar a.active {
     line-height: 1.1em;
 }
 
+@media (max-width: 884px) {
+    .hero .content h1.title {
+        font-size: 3em;
+    }
+}
+
 @media (max-width: 472px) {
     .hero .content h1.title {
         font-size: 2em;
@@ -73,6 +79,13 @@ header .menubar a.active {
     height: 320px;
     position: absolute;
     
+}
+
+@media (max-width: 884px) {
+    .rectangle {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 @media (max-width: 472px) {
