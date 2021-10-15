@@ -21,7 +21,7 @@ header .logo {
 
 
 header .menubar a {
-    font-size: .7em;
+    font-size: 1em;
     text-decoration: none;
     color: var(--secondary);
     font-weight: 500;
@@ -29,7 +29,7 @@ header .menubar a {
 
 @media (max-width: 472px) {
     header .menubar a {
-        font-size: .8em;
+        font-size: 1em;
     }
 }
 
@@ -46,19 +46,26 @@ header .menubar a.active {
 
 .hero .content h1.title {
     color: var(--primary);
-    font-size: 3em;
+    font-size: 4em;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1.1em;
 }
+
+@media (max-width: 472px) {
+    .hero .content h1.title {
+        font-size: 2em;
+    }
+}
+
 .hero .content p {
-    font-size: .9em;
+    font-size: 1em;
 }
 
 .hero .content .btn {
     background-color: var(--primary);
     color: #fff;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 .rectangle {
@@ -68,16 +75,22 @@ header .menubar a.active {
     
 }
 
+@media (max-width: 472px) {
+    .rectangle {
+        display: none;
+    }
+}
+
 .fill {
     background-color: var(--primary);
-    bottom: 40px;
+    bottom: 230px;
     right: 0;
 }
 
 .with-border {
     border: 8px solid var(--secondary);    right: 80px;
     right: 80px;
-    bottom: 96px;
+    bottom: 300px;
     z-index: -1;
 }
 
@@ -107,7 +120,7 @@ header .menubar a.active {
 }
 
 .courses .courses-card {
-    min-width: 190px;
+    min-width: 230px;
     box-shadow: 1px 1px 2px 0px #dcdcdf7a;
     transition: .3s;
     -webkit-transition: .3s;
@@ -138,7 +151,7 @@ header .menubar a.active {
 }
 
 .courses .courses-card .c-info {
-    font-size: .7em;
+    font-size: .8em;
     font-weight: 400;
     color: var(--secondary);
 }

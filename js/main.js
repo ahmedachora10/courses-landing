@@ -1,7 +1,7 @@
 const courses = {
     coursesContainer: document.querySelector('#courses-container'),
     coursesCount: document.querySelector('#courses-container').childElementCount,
-    courseWidth: 200,
+    courseWidth: document.querySelector('#courses-container').firstElementChild.clientWidth,
     counter: 0,
     nextBtn: document.querySelector('#next'),
     prevBtn: document.querySelector('#prev'),
