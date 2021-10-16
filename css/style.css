@@ -41,6 +41,7 @@ header .menubar a.active {
 
 /* ** Hero Section ** */
 .hero {
+    position: relative;
     height: 500px;
 }
 
@@ -96,14 +97,14 @@ header .menubar a.active {
 
 .fill {
     background-color: var(--primary);
-    bottom: 230px;
+    bottom: -120px;
     right: 0;
 }
 
 .with-border {
-    border: 8px solid var(--secondary);    right: 80px;
+    border: 8px solid var(--secondary);
     right: 80px;
-    bottom: 300px;
+    bottom: -46px;
     z-index: -1;
 }
 
